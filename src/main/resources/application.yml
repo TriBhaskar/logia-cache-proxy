@@ -1,0 +1,17 @@
+spring:
+  main:
+    banner-mode: console
+  application:
+    name: logia-cache-proxy
+
+server:
+  port: ${port:8080}
+
+logging:
+  level:
+    com.anterka.logia: INFO
+
+# Proxy configuration with defaults
+proxy:
+  origin: ${origin:}
+  clearCache: ${clearCache:false}
